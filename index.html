@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Elegante Carrusel y Productos</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    .carousel {
+      display: flex;
+      overflow: hidden;
+      position: relative;
+    }
+    .carousel-track {
+      display: flex;
+      transition: transform 0.5s ease-in-out;
+    }
+    .carousel-item {
+      flex: 0 0 100%;
+    }
+  </style>
+</head>
+<body class="bg-black text-white">
+  <!-- Carrusel -->
+  <div class="carousel bg-black">
+    <div class="carousel-track">
+      <!-- Logo -->
+      <div class="carousel-item flex justify-center items-center">
+        <img src="logo.gif" alt="Imagen 1" class="w-full h-auto">
+      </div>
+      <!-- Imagen 1 -->
+      <div class="carousel-item">
+        <img src="img1.png" alt="Imagen 1" class="w-full h-auto">
+      </div>
+      <!-- Imagen 2 -->
+      <div class="carousel-item">
+        <img src="img2.gif" alt="Imagen 2" class="w-full h-auto">
+      </div>
+    </div>
+  </div>
+
+  <!-- Productos -->
+  <section class="py-10">
+    <div class="container mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+      <div class="bg-gray-800 text-white rounded-lg shadow-lg p-4">
+        <img src="art1.jpg" alt="Producto 1" class="rounded-t-lg">
+        <h2 class="text-xl font-semibold mt-2">Perfume Lattafa Khamrah 100ml Unisex </h2>
+        <p class="text-gray-400"></p>
+        <p class="text-yellow-500 font-bold mt-2">$60.000 contado | 3 semanas $25.000</p>
+      </div>
+      <div class="bg-gray-800 text-white rounded-lg shadow-lg p-4">
+        <img src="art2.jpg" alt="Producto 1" class="rounded-t-lg">
+        <h2 class="text-xl font-semibold mt-2">Perfume Lattafa Khamrah 100ml</h2>
+        <p class="text-gray-400"></p>
+        <p class="text-yellow-500 font-bold mt-2">$60.000 | 3 semanas $25.000</p>
+      </div>
+      <div class="bg-gray-800 text-white rounded-lg shadow-lg p-4">
+        <img src="art3.jpg" alt="Producto 1" class="rounded-t-lg">
+        <h2 class="text-xl font-semibold mt-2">Lattafa Asad Zanzibar 100ml </h2>
+        <p class="text-gray-400"></p>
+        <p class="text-yellow-500 font-bold mt-2">$60.000 | 3 semanas $25.000</p>
+      </div>
+      <div class="bg-gray-800 text-white rounded-lg shadow-lg p-4">
+        <img src="art4.jpg" alt="Producto 1" class="rounded-t-lg">
+        <h2 class="text-xl font-semibold mt-2">Perfume De Mujer Lattafa Fakhar </h2>
+        <p class="text-gray-400"></p>
+        <p class="text-yellow-500 font-bold mt-2">$-</p>
+      </div>
+      <div class="bg-gray-800 text-white rounded-lg shadow-lg p-4">
+        <img src="art5.jpg" alt="Producto 1" class="rounded-t-lg">
+        <h2 class="text-xl font-semibold mt-2">Adyan Dalia Ciel 100ml</h2>
+        <p class="text-gray-400"></p>
+        <p class="text-yellow-500 font-bold mt-2">$70.000 | 3 semanas $30.000</p>
+      </div>
+      <div class="bg-gray-800 text-white rounded-lg shadow-lg p-4">
+        <img src="art6.jpg" alt="Producto 1" class="rounded-t-lg">
+        <h2 class="text-xl font-semibold mt-2">Club de Nuit Intense Man Armaf 105ml</h2>
+        <p class="text-gray-400"></p>
+        <p class="text-yellow-500 font-bold mt-2">$110.000 | 3 semanas $45.000</p>
+      </div>
+      <div class="bg-gray-800 text-white rounded-lg shadow-lg p-4">
+        <img src="art7.jpg" alt="Producto 1" class="rounded-t-lg">
+        <h2 class="text-xl font-semibold mt-2">Perfume Adyan Norah Caramela</h2>
+        <p class="text-gray-400"></p>
+        <p class="text-yellow-500 font-bold mt-2">$60.000 | 3 semanas $25.000</p>
+      </div>
+      <div class="bg-gray-800 text-white rounded-lg shadow-lg p-4">
+        <img src="art8.jpg" alt="Producto 1" class="rounded-t-lg">
+        <h2 class="text-xl font-semibold mt-2">Afnan 9am Dive 100 ML Unisex</h2>
+        <p class="text-gray-400"></p>
+        <p class="text-yellow-500 font-bold mt-2">$60.000 | 3 semanas $25.000</p>
+      </div>
+      <div class="bg-gray-800 text-white rounded-lg shadow-lg p-4">
+        <img src="art9.jpg" alt="Producto 1" class="rounded-t-lg">
+        <h2 class="text-xl font-semibold mt-2">Adyan Majestic Pastels</h2>
+        <p class="text-gray-400"></p>
+        <p class="text-yellow-500 font-bold mt-2">$70.000 | 3 semanas $30.000</p>
+      </div>
+      <div class="bg-gray-800 text-white rounded-lg shadow-lg p-4">
+        <img src="art10.jpg" alt="Producto 1" class="rounded-t-lg">
+        <h2 class="text-xl font-semibold mt-2">Perfume Árabe Rose Mystery Intense </h2>
+        <p class="text-gray-400"></p>
+        <p class="text-yellow-500 font-bold mt-2">$70.000 | 3 semanas $30.000</p>
+      </div>
+      <div class="bg-gray-800 text-white rounded-lg shadow-lg p-4">
+        <img src="art11.jpg" alt="Producto 1" class="rounded-t-lg">
+        <h2 class="text-xl font-semibold mt-2">Moto g04</h2>
+        <p class="text-gray-400">
+          Procesador específico	Octa Core 1.6 Ghz |
+          Cámara posterior	16 MP |
+          Capacidad de almacenamiento	64GB |
+          Núcleos del procesador	Octa core |
+          Cámara frontal	5 MP
+          Sistema operativo	Android |
+          Memoria RAM	4GB</p>
+        <p class="text-yellow-500 font-bold mt-2">$160.000 | 3 semanas $65.000</p>
+      </div>
+      <div class="bg-gray-800 text-white rounded-lg shadow-lg p-4">
+        <img src="art12.jpg" alt="Producto 1" class="rounded-t-lg">
+        <h2 class="text-xl font-semibold mt-2">Xiaomi Redmi A3</h2>
+        <p class="text-gray-400"> Procesador específico	Helio G36 |
+          Cámara posterior	8 MP |
+          Capacidad de almacenamiento	64GB |
+          Núcleos del procesador	Octa core |
+          Cámara frontal	5 MP
+          Sistema operativo	Android |
+          Memoria RAM	3GB</p>
+        <p class="text-yellow-500 font-bold mt-2">$175.000 | 3 semanas $70.000</p>
+      </div>
+      <div class="bg-gray-800 text-white rounded-lg shadow-lg p-4">
+        <img src="art13.jpg" alt="Producto 1" class="rounded-t-lg">
+        <h2 class="text-xl font-semibold mt-2">Samsung A05</h2>
+        <p class="text-gray-400">Procesador específico	Octa core 2 Ghz|
+          Cámara posterior	50 MP |
+          Capacidad de almacenamiento	64GB |
+          Núcleos del procesador	Octa core |
+          Cámara frontal	8 MP
+          Sistema operativo	Android |
+          Memoria RAM	4GB</p>
+        <p class="text-yellow-500 font-bold mt-2">$180.000 | 3 semanas $70.000</p>
+      </div>
+      <div class="bg-gray-800 text-white rounded-lg shadow-lg p-4">
+        <img src="art14.jpg" alt="Producto 1" class="rounded-t-lg">
+        <h2 class="text-xl font-semibold mt-2">Armaf Odyssey Mandarin</h2>
+        <p class="text-gray-400"></p>
+        <p class="text-yellow-500 font-bold mt-2">$70.000 | 3 semanas $30.000</p>
+      </div>
+      <div class="bg-gray-800 text-white rounded-lg shadow-lg p-4">
+        <img src="art15.jpg" alt="Producto 1" class="rounded-t-lg">
+        <h2 class="text-xl font-semibold mt-2">Afnan Afnan 9pm </h2>
+        <p class="text-gray-400"></p>
+        <p class="text-yellow-500 font-bold mt-2">$60.000 | 3 semanas $25.000</p>
+      </div>
+      <div class="bg-gray-800 text-white rounded-lg shadow-lg p-4">
+        <img src="art16.jpg" alt="Producto 1" class="rounded-t-lg">
+        <h2 class="text-xl font-semibold mt-2">Dalia Noir 100ML</h2>
+        <p class="text-gray-400"></p>
+        <p class="text-yellow-500 font-bold mt-2">$70.000 | 3 semanas $30.000</p>
+      </div>
+      <div class="bg-gray-800 text-white rounded-lg shadow-lg p-4">
+        <img src="art17.jpg" alt="Producto 1" class="rounded-t-lg">
+        <h2 class="text-xl font-semibold mt-2">Odyssey spectra</h2>
+        <p class="text-gray-400"></p>
+        <p class="text-yellow-500 font-bold mt-2">$90.000 | 3 semanas $40.000</p>
+      </div>
+      <div class="bg-gray-800 text-white rounded-lg shadow-lg p-4">
+        <img src="art18.jpg" alt="Producto 1" class="rounded-t-lg">
+        <h2 class="text-xl font-semibold mt-2">Odyssey tyrant</h2>
+        <p class="text-gray-400"></p>
+        <p class="text-yellow-500 font-bold mt-2">$-</p>
+      </div>
+      <div class="bg-gray-800 text-white rounded-lg shadow-lg p-4">
+        <img src="art19.jpg" alt="Producto 1" class="rounded-t-lg">
+        <h2 class="text-xl font-semibold mt-2">Perfume De Mujer Lattafa Yara </h2>
+        <p class="text-gray-400"></p>
+        <p class="text-yellow-500 font-bold mt-2">$-</p>
+      </div>
+    </div>
+    
+  </section>
+
+  <script>
+    let currentIndex = 0;
+
+    function autoSlide() {
+      const track = document.querySelector('.carousel-track');
+      const items = document.querySelectorAll('.carousel-item');
+      const totalItems = items.length;
+
+      currentIndex = (currentIndex + 1) % totalItems;
+      track.style.transform = `translateX(-${currentIndex * 100}%)`;
+    }
+
+    setInterval(autoSlide, 5000); // Cambia cada 5 segundos
+  </script>
+</body>
+</html>
+
